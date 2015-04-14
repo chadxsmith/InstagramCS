@@ -1,0 +1,17 @@
+<h2>Welcome to Instagram</h2>
+
+<form action="/entries" method="post">
+
+    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+    <label for="author">Author:</label>
+    <input type="text" name="entry[author]" placeholder="Enter photo's author">
+
+    <label for="photo_url">Photo Url:</label>
+    <input type="text" name="entry[photo_url]" placeholder="Enter photo's URL">
+
+    <label for="photo_url">Date Taken:</label>
+    <input type="text" name="entry[date_taken]" placeholder="Enter photo's date">
+
+    <button type="submit">Add Image</button>
+</form>

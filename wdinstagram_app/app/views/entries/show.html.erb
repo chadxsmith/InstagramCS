@@ -1,0 +1,15 @@
+<h1>Welcome to Instagram: View Your Photos</h1>
+
+<ul>
+
+  <% @entries.each do |entry| %>
+
+  <li>Name:<%=entry.author%></li>
+
+  <a href="/entries/<%= entry.author%>/edit">Edit</a>
+  <%= form_tag entry_path(@entries), method: "delete" do%>
+  <%= submit_tag("destroy") %>
+  <% end %>
+
+  <% end %>
+</ul>

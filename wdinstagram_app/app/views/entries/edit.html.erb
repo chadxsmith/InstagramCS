@@ -1,0 +1,11 @@
+<h1>Welcome to Instagram: Edit Your Photo</h1>
+
+<%= form_for @entry do |f| %>
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+    <%= f.label :photo_url %>
+    <%= f.text_field :photo_url %>
+    <%= f.label :date_taken %>
+    <%= f.text_field :date_taken%>
+    <%= f.submit "Edit Photo", id: "submit" %>
+<% end %>
